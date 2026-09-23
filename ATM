@@ -1,0 +1,29 @@
+print("**********WELL COME TO ATM MACHINE GNERATOR**********")
+
+print("1.CHECK BALANCE:")
+print("2.DEPOSITE:")
+print("WITHDRAW:")
+print("EXIT:")
+
+choice = int(input("enter your choice(1/2/3/4): "))
+
+def ATM(C) :
+    BALANCE = 5000
+    if C == 1:
+        print(f"your balance is {BALANCE}")
+    elif C == 2:
+        d = int(input("enter the amount to deposite\n: "))
+        BALANCE += d 
+        print("DEPOSITE SUCCESFULLY DONE!!\n")
+        print(f"new balance is {BALANCE}")
+    elif C == 3 :
+        w = int(input("enter amount to withdraw: "))
+        if w > BALANCE :
+            print("ERROR! WITHDRAW NOT POSSIBLE")
+        else :
+            BALANCE -= w
+            print("WITHDRAWAL SUCCESFULLY DONE!!")
+    else :
+        print("THANK YOU!!! COME AGAIN!!")
+    
+ATM(choice)      
