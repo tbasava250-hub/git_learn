@@ -1,0 +1,18 @@
+d = {}
+
+name = input("enter your name: ")
+lan = input("enter your language: ")
+d.update({name : lan})
+name = input("enter your name: ")
+lan = input("enter your language: ")
+d.update({name : lan})
+name = input("enter your name: ")
+lan = input("enter your language: ")
+d.update({name : lan})
+name = input("enter your name: ")
+lan = input("enter your language: ")
+d.update({name : lan})
+name = input("enter your name: ")
+lan = input("enter your language: ")
+d.update({name : lan})
+print(d)
